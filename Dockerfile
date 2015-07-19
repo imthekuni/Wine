@@ -15,7 +15,7 @@ build-essential \
 pkg-config
 
 RUN apt-get update
-RUN apt-get install -qy
+RUN apt-get install -qy \
 wine1.7 \
 winetricks \
 xvfb
