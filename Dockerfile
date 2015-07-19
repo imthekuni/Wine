@@ -8,6 +8,7 @@ RUN echo 'deb-src http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu trusty main' >
 
 RUN dpkg --add-architecture i386
 
+RUN apt-key update
 RUN apt-get update
 RUN apt-get install -qy \
 build-essential \
