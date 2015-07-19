@@ -6,6 +6,8 @@ RUN echo 'deb http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu trusty main' >> /e
 RUN echo 'deb-src http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu trusty main' >> /etc/apt/sources.list
 #RUN add-apt-repository ppa:ubuntu-wine/ppa
 
+RUN --add-architecture i386
+
 RUN apt-get update
 RUN apt-get install -qy \
 build-essential \
