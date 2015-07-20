@@ -10,7 +10,7 @@ RUN dpkg --add-architecture i386
 RUN apt-key update
 RUN apt-get update
 RUN apt-get install -qy \
-software-properties-common
+software-properties-common \
 build-essential \
 pkg-config
 
